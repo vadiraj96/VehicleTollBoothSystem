@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#input {
+ font:  Arial, sans-serif;
+   width: 20%;
+  border: 1px solid #ccc;
+   background:light-green;
+  margin: 0 0 5px;
+  padding: 5px;
+  border-radius:10%;
+}
+
+#input:hover {
+box-shadow: 10px 10px;
+  -webkit-transition: border-color 0.3s ease-in-out;
+background:white;
+  border: 1px solid #aaa;
+}
+* {
+  box-sizing: border-box;
+}
+
+.background-image {
+  background-image: url('image/toll.jpg');
+  background-size: cover;
+  display: block;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  height: 800px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 1;
+}
+
+.content {
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 3px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  top: 10px;
+  left: 0;
+  position: fixed;
+  margin-left: 20px;
+  margin-right: 20px;
+  right: 0;
+  z-index: 2;
+  padding: 0 10px;
+}
+</style>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+
+<body align="center" >
+<div class="background-image"></div>
+<div class="content w3-center">
+<h1 align="center">
+Welcome to Toll Booth
+</h1>
+<div class="w3-center w3-center">
+<form action="vehicleindex.html">
+ <fieldset>
+ 
+      <button name="submit" type="submit" id="input" id="contact-submit" onClick="location.href='VehicleRegister.jsp'"><p text-color="white">Vehicle Registration</p></button>
+    </fieldset>
+    </form>
+    <form action="GenReport.html">
+         <fieldset>
+      <button name="submit" type="submit" id="input"  id="contact-submit" data-submit="...Sending"><p text-color="white">Report Generation</p></button>
+    </fieldset>
+    </form>
+    </div>
+</div>
+</body>
+</html>

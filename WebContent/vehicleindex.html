@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>WELCOME&nbsp;TO&nbsp;VEHICLE&nbsp;REGISTRATION&nbsp</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style type="text/css">
+* {
+  box-sizing: border-box;
+}
+
+.background-image {
+  background-image: url('image/toll.jpg');
+  background-size: cover;
+  display: block;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  height: 800px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: 0;
+}
+
+.content {
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 3px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  top: 10px;
+  left: 0;
+   position: relative; 
+  margin-left: 20px;
+  margin-right: 20px;
+  right: 0;
+  z-index: 1;
+  padding: 0 10px;
+}
+</style>
+</head>
+<body>
+<div class="background-image"></div>
+<div class="content w3-center">
+<h1>WELCOME&nbsp;TO&nbsp;VEHICLE&nbsp;REGISTRATION&nbsp</h1>
+<div class="register w3-center">
+<h2>Register Here</h2>
+<form method="post" id="register" action="./VehicleRegister" method="POST" enctype="multipart/form-data">
+
+   <h2>Upload&nbsp;Data&nbsp;from&nbsp;Excel&nbsp;</h2>
+   <table>
+    <tr>
+    <td><b>Choose&nbsp;A&nbsp;File&nbsp</b></td>
+     <td><input type="file" name="fname"></td>
+    </tr>
+    </table>
+ <input type="submit" value="submit" id="Filesubmit">
+ 
+   </form> </br></br>
+   <form action="./VehicleRegister" method="GET">
+<h2> Please&nbsp;Enter&nbsp;All&nbsp;Fields&nbsp;Properly</h2>
+<label>Vehicle&nbsp;Type :</label><br>
+<select id="vehicle" name="vehicleType" onclick="myFunction()">
+        <option value="1">Select&nbsp;Vehicle&nbsp;Type</option>
+        <option value="2W"> 2&nbsp;Wheeler</option>
+        <option value="4W">4&nbsp;Wheeler</option>
+        <option value="6W">6&nbsp;Wheeler</option>
+        <option value="8W">8&nbsp;Wheeler</option>
+       </select></br></br>
+
+
+
+<label>Toll-money&nbsp; :</label><br>
+<input type="text" name="Money" id="money"
+placeholder="Enter Toll Money"><br><br>
+
+<label>Vehicle&nbsp;No :</label><br>
+<input type="text" name="VehicleNo" id="VehicleNo" placeholder="Enter Vehicle Number "><br><br>
+
+<label>Vehicle&nbsp;Model :</label><br>
+<input type="Model" name="VehicleModel" id="VehicleModel"
+placeholder="Enter Vehicle Model"><br><br>
+
+<label>Vehicle&nbsp;Capacity :</label><br>
+<input type="Capacity" name="VehicleCapacity" id="Capacity"
+placeholder="Enter Vehicle Capacity"><br><br>
+
+<label>Entry&nbsp;Type :</label><br>
+<input type="Type" name="EntryType" id="EntryType"
+placeholder="Enter Entry Type"><br><br>
+<input type="submit" value="submit" id="sub">
+
+
+</form>
+
+
+<script>
+   function myFunction() {
+    var x = document.getElementById("vehicle").selectedIndex;
+    var val=document.getElementsByTagName("option")[x].value;
+    //alert(val);
+    if(val=='1')
+     document.getElementById("money").value= '0';
+    else if(val=='2W')
+     document.getElementById("money").value= '10';
+    else if(val=='4W')
+     document.getElementById("money").value= '20';
+    else if(val=='6W')
+     document.getElementById("money").value= '30';
+    else if(val=='8W')
+     document.getElementById("money").value= '40';
+   }
+</script>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#input {
+ font:  Arial, sans-serif;
+   width: 20%;
+  border: 1px solid #ccc;
+   background:light-green;
+  margin: 0 0 5px;
+  padding: 5px;
+  border-radius:10%;
+}
+
+#input:hover {
+box-shadow: 10px 10px;
+  -webkit-transition: border-color 0.3s ease-in-out;
+background:white;
+  border: 1px solid #aaa;
+}
+</style>
+<body align="center" bgcolor="green">
+<h1 align="center">
+Welcome to Toll Booth
+
+<form action="success.html">
+ <fieldset>
+ 
+      <button name="submit" type="submit" id="input" id="contact-submit" onClick="location.href='VehicleRegister.jsp'"><p text-color="white">User Registeration </p></button>
+    </fieldset>
+    </form>
+    <form action="login.html">
+         <fieldset>
+      <button name="submit" type="submit" id="input"  id="contact-submit" data-submit="...Sending"><p text-color="white">User Login</p></button>
+    </fieldset>
+    </form>
+</h1>
+</body>
+</html>

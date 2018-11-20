@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#input {
+ font:  Arial, sans-serif;
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#input:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+ 
+  border: 1px solid #aaa;
+}
+
+#contact button {
+  cursor: pointer;
+  width: 40%;
+  border: none;
+  background: #4CAF50;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button:hover {
+  background: black;
+  -webkit-transition: background 0.3s ease-in-out;
+  
+}
+
+#contact button[type="submit"]:active {
+  
+}
+</style>
+<body bgcolor="green">
+<h1 align="center">
+Username doesn't exist
+<div class="container">  
+  <form name="myForm" id="contact" action="./register1" method="post">
+<fieldset>
+      <button name="submit" type="submit" id="input"  id="contact-submit" data-submit="...Sending">Register</button>
+    </fieldset>
+
+</h1>
+
+  </form>
+</div>
+</body>
+</html>
